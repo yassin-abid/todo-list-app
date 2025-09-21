@@ -1,0 +1,121 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+#app {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 500px;
+
+    }
+ul {
+      list-style: none;
+      padding: 0px;
+    }
+li {
+      padding:8px;
+      border-bottom: 1px solid #ddd;
+      margin-top: 8px;
+    }
+#stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+#stats p {
+  margin: 0;
+}
+
+h2 {
+      text-align: center;
+    }
+#taskInput {
+      width: calc(100% - 120px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+#deleteAll {
+      width: 80px;
+      height: 30px;
+      padding: 7px;
+      background: #260202ea;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 100px;
+      float: right;
+      font-size: 12px;
+    }
+#deleteAll:hover {
+      background: #c11212;
+    }
+
+#addbtn {
+      width: 80px;
+      height: 40px;
+      padding: 10px;
+      background: #09790ea1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+#addbtn:hover {
+      background: #218838;
+    }
+#deleteBtn {
+      background: #ee5867;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-left: 10px;
+      
+    }
+#deleteBtn:hover {
+      background: #c82333;
+    }
+#terminerBtn {
+      background: #0957718a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-left: 10px;
+    }
+#terminerBtn:hover {
+      background: #093f718a;
+    }    
+#searchInput {
+  width: 180px;
+  height: 30px; /* increased height for icon */
+  padding: 8px 8px 8px 30px; /* left padding so text doesn't overlap the icon */
+  margin-bottom: 10px;
+  border: 1px solid #423b3b9e;
+  border-radius: 20px;
+
+  background: url("search.png") no-repeat 8px center;
+  background-size: 16px; /* size of your icon */
+
+  display: flex;
+  justify-self: center;
+  
+}
