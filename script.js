@@ -81,7 +81,13 @@ function afficherTaches() {
         terminerBtn.style.marginLeft = '10px';
         terminerBtn.id = 'terminerBtn';
 
-        terminerBtn.onclick = () => terminerTache(index);
+        terminerBtn.onclick = () => {
+            if (task.terminee) {
+                unterminateTache(index);
+            } else {
+                terminerTache(index);
+            }
+        };
 
         
 
@@ -96,6 +102,16 @@ function afficherTaches() {
 
 
 }    
+
+function unterminateTache(index) {
+    tasks[index].terminee= false;
+    nbtasktencours++;
+    nbtasktermine--;
+    saveTaskes();
+    afficherTaches();
+}   
+
+
 
 function terminerTache(index) {
     tasks[index].terminee= true;
